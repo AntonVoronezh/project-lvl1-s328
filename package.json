@@ -1,0 +1,37 @@
+{
+  "name": "project-1-antonvoronezh",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-node": "babel-node",
+	"build": "cross-env NODE_ENV=production babel src --out-dir dist --source-maps inline",
+	"prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonVoronezh/project-lvl1-s328.git"
+  },
+  "author": "Anton Voronezh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonVoronezh/project-lvl1-s328/issues"
+  },
+  "homepage": "https://github.com/AntonVoronezh/project-lvl1-s328#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  },
+  "bin": {
+     "brain-games": "dist/bin/brain-games.js"
+   }
+}
