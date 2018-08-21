@@ -1,6 +1,6 @@
 {
   "name": "project-1-antonvoronezh",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "AntonVoronezh first project",
   "main": "index.js",
   "files": [
@@ -11,7 +11,7 @@
     "babel-node": "babel-node",
     "build": "cross-env NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build",
-    "eslint": "eslint ./"
+    "eslint": "."
   },
   "repository": {
     "type": "git",
