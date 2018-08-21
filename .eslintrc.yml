@@ -1,0 +1,18 @@
+---
+
+plugins:
+  - babel
+  - import
+
+env:
+  node: true
+  browser: true
+
+parser: babel-eslint
+
+extends:
+  - 'airbnb-base'
+  - 'plugin:import'
+
+rules:
+  no-console: 0
