@@ -11,7 +11,6 @@ parser: babel-eslint
 
 extends:
   - 'airbnb-base'
-  - 'plugin:import'
 
 rules:
   no-console: 0
