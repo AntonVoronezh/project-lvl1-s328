@@ -2,8 +2,7 @@
 
 plugins:
   - babel
-  - import
-
+  
 env:
   node: true
     
