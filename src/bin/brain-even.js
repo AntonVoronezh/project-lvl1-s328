@@ -7,8 +7,6 @@ console.log('\n Hello! ' + userName);
 
 const playGame = (acc) => {
     if (acc === 3) {
-        //console.log('\n Congratulations, ' + userName +'!');
-        //console.log('\n Congratulations ');
         return '\n Congratulations ' + userName + '!'; 
     }
     const randomNum = Math.floor(Math.random() * 10);

@@ -1,6 +1,6 @@
 {
   "name": "project-1-antonvoronezh",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "AntonVoronezh first project",
   "main": "index.js",
   "files": [
@@ -11,7 +11,7 @@
     "babel-node": "babel-node",
     "build": "cross-env NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build",
-    "eslint": "."
+    "eslint": "eslint"
   },
   "repository": {
     "type": "git",
@@ -29,12 +29,13 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-0": "^6.24.1",
     "cross-env": "^5.2.0",
-    "babel-eslint": "^8.2.6",
     "eslint": "^5.4.0",
     "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-babel": "^5.1.0",
     "eslint-plugin-import": "^2.14.0"
   },
   "bin": {
