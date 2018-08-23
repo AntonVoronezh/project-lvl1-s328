@@ -1,5 +1,6 @@
-#!/usr/bin/env node
 import readlineSync from 'readline-sync';
+
+const roundsCount = 3;
 /**
  * Game Even
  * @example
@@ -10,25 +11,26 @@ import readlineSync from 'readline-sync';
 const playEven = () => {
   const welcome = 'Welcome to Brain Games! \n';
   console.log(welcome);
-  const rules = 'Answer "yes" if number even otherwise answer "no".';
-  console.log(rules);
+  const description = 'Answer "yes" if number even otherwise answer "no".';
+  console.log(description);
   const userName = readlineSync.question('May I have your name? ');
   console.log(`\n Hello!${userName}`);
   const playRounds = (acc) => {
-    const roundsCount = 3;
     if (acc === roundsCount) {
       return `\n Congratulations ${userName}!`;
     }
-    const randomNumForQuestion = Math.floor(Math.random() * 10);
-    console.log(`\n Question: ${randomNumForQuestion}`);
+    const question = Math.floor(Math.random() * 10);
+    console.log(`\n Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    const correctAnswer = randomNumForQuestion % 2 === 0 ? 'yes' : 'no';
-    const isEven = correctAnswer === userAnswer;
-    if (isEven) {
+    const isEven = question % 2 === 0;
+    const correctAnswer = isEven ? 'yes' : 'no';
+    if (correctAnswer === userAnswer) {
       console.log('Correct!');
       return playRounds(acc + 1);
+    } if (correctAnswer !== userAnswer) {
+      return `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \n Let's try again, ${userName}`;
     }
-    return `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \n Let's try again, ${userName}`;
+    return undefined;
   };
   console.log(playRounds(0));
 };
@@ -45,12 +47,11 @@ export default playEven;
 export const playCalc = () => {
   const welcome = 'Welcome to Brain Games! \n';
   console.log(welcome);
-  const rules = 'What is the result of the expression?';
-  console.log(rules);
+  const description = 'What is the result of the expression?';
+  console.log(description);
   const userName = readlineSync.question('May I have your name? ');
   console.log(`\n Hello!${userName}`);
   const playRounds = (acc) => {
-    const roundsCount = 3;
     if (acc === roundsCount) {
       return `\n Congratulations ${userName}!`;
     }
