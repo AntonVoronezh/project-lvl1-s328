@@ -1,5 +1,5 @@
 import buildGame from '..';
-import getRandomNum from '../func';
+import getRandomNum from '../utils';
 import { cons } from 'hexlet-pairs';
 
 /**
@@ -32,7 +32,4 @@ const generateQuestion = () => {
     }
   }
 };
-
-
-const playNow = () => buildGame(description, generateQuestion);
-export default playNow;
+export default () => buildGame(description, generateQuestion);

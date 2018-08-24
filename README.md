@@ -15,3 +15,6 @@ This is the repository of the training project on the website of student hexlet 
 
 ## asciinema step 6
 [![asciicast](https://asciinema.org/a/pSt5dYY59DygnJwyrgSUtLd0D.png)](https://asciinema.org/a/pSt5dYY59DygnJwyrgSUtLd0D)
+
+## asciinema step 7
+[![asciicast](https://asciinema.org/a/BpgrwGGf3P35Wj288Eg7RjT0a.png)](https://asciinema.org/a/BpgrwGGf3P35Wj288Eg7RjT0a)
