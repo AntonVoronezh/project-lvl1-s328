@@ -10,15 +10,15 @@ const buildGame = (getDescription, generateQuestion) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`\n Hello! ${userName}`);
   const playRounds = (acc) => {
-    const newRound = generateQuestion();
-    const genNewQuestion = car(newRound);
-    const genNewAnswer = cdr(newRound);
     if (acc === roundsCount) {
       return console.log(`\n Congratulations ${userName}!`);
     }
+    const newRound = generateQuestion();
+    const genNewQuestion = car(newRound);
+    const genNewAnswer = cdr(newRound);
     console.log(`\n Question: ${genNewQuestion}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (genNewAnswer === userAnswer) {
+    if (genNewAnswer === Math.abs(userAnswer)) {
       console.log('Correct!');
       return playRounds(acc + 1);
     }
