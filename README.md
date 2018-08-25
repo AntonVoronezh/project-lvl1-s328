@@ -17,10 +17,10 @@ This is the repository of the training project on the website of student hexlet 
 [![asciicast](https://asciinema.org/a/pSt5dYY59DygnJwyrgSUtLd0D.png)](https://asciinema.org/a/pSt5dYY59DygnJwyrgSUtLd0D)
 
 ## asciinema step 7
-[![asciicast](https://asciinema.org/a/BpgrwGGf3P35Wj288Eg7RjT0a.png)](https://asciinema.org/a/BpgrwGGf3P35Wj288Eg7RjT0a)
+[![asciicast](https://asciinema.org/a/hg772G67woG9MpN4Cp9Y5oTnt.png)](https://asciinema.org/a/hg772G67woG9MpN4Cp9Y5oTnt)
 
 ## asciinema step 8
-[![asciicast](https://asciinema.org/a/Co3cqC9qpRivWAGvL1bTCh2rx.png)](https://asciinema.org/a/Co3cqC9qpRivWAGvL1bTCh2rx)
+[![asciicast](https://asciinema.org/a/v18bJAFl7VZcIG8p8SXoRaxwv.png)](https://asciinema.org/a/v18bJAFl7VZcIG8p8SXoRaxwv)
 
 ## asciinema step 9
-[![asciicast](https://asciinema.org/a/SsKop2qUh7U0bhhG5vsLa110p.png)](https://asciinema.org/a/SsKop2qUh7U0bhhG5vsLa110p)
+[![asciicast](https://asciinema.org/a/Hs8vOXjyRfygttP1AO8oY4vRA.png)](https://asciinema.org/a/Hs8vOXjyRfygttP1AO8oY4vRA)
