@@ -17,29 +17,25 @@ const generateQuestion = () => {
   let summ = 0;
   while (num !== 0) {
     summ += num % 10;
-    // console.log('summ - ' + summ);
     count += 1;
-    // console.log('count - ' + count);
     num = Math.floor(num / 10);
   }
   const integerPart = Math.floor(summ / count);
-  // console.log('\n integerPart - ' + integerPart);
   let remainder = summ % count;
-  // console.log('remainder - ' + remainder);
   let result = 0;
   for (let i = 0; i < count; i += 1) {
     result += integerPart * (10 ** i);
-    if (remainder !== 0) {
+    if (remainder) {
       result += 1 * (10 ** i);
       remainder -= 1;
     }
-    // console.log('result - ' + i +' -> ' + result);
   }
-  const getQuestion = `${randNum}`;
-  const correctAnswer = `${result}`;
-  // console.log(getQuestion);
-  // console.log(correctAnswer);
-  return cons(getQuestion, correctAnswer);
+  const zerroCount = count - String(result).length;
+  for (let i = 0; i < zerroCount; i += 1) {
+    result = `0${result}`;
+  }
+  const question = `${randNum}`;
+  const correctAnswer = String(result);
+  return cons(question, correctAnswer);
 };
-// console.log(toString(generateQuestion(4181)));
 export default () => buildGame(description, generateQuestion);
