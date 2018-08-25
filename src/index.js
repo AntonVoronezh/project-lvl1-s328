@@ -19,7 +19,7 @@ const buildGame = (getDescription, generateQuestion) => {
     const genNewAnswer = cdr(newRound);
     console.log(`\n Question: ${genNewQuestion}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (genNewAnswer !== Math.abs(userAnswer)) {
+    if (genNewAnswer !== userAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${genNewAnswer}'. \n Let's try again, ${userName}`);
       return;
     }
