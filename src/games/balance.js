@@ -61,8 +61,8 @@ const getBalance = (num) => {
   return getBalance(out);
 };
 const generateQuestion = () => {
-  const getQuestion = getRandomNum(100, 999);
-  const correctAnswer = getBalance(getQuestion);
-  return cons(Math.abs(getQuestion), Math.abs(correctAnswer));
+  const question = getRandomNum(100, 999);
+  const correctAnswer = getBalance(question);
+  return cons(Math.abs(question), Math.abs(correctAnswer));
 };
 export default () => buildGame(description, generateQuestion);

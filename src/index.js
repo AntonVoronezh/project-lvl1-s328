@@ -11,18 +11,20 @@ const buildGame = (getDescription, generateQuestion) => {
   console.log(`\n Hello! ${userName}`);
   const playRounds = (acc) => {
     if (acc === roundsCount) {
-      return console.log(`\n Congratulations ${userName}!`);
+      console.log(`\n Congratulations ${userName}!`);
+      return;
     }
     const newRound = generateQuestion();
     const genNewQuestion = car(newRound);
     const genNewAnswer = cdr(newRound);
     console.log(`\n Question: ${genNewQuestion}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (genNewAnswer === Math.abs(userAnswer)) {
-      console.log('Correct!');
-      return playRounds(acc + 1);
+    if (genNewAnswer !== Math.abs(userAnswer)) {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${genNewAnswer}'. \n Let's try again, ${userName}`);
+      return;
     }
-    return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${genNewAnswer}'. \n Let's try again, ${userName}`);
+    console.log('Correct!');
+    playRounds(acc + 1);
   };
   playRounds(0);
 };
