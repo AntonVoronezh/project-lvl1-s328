@@ -24,3 +24,6 @@ This is the repository of the training project on the website of student hexlet 
 
 ## asciinema step 9
 [![asciicast](https://asciinema.org/a/Hs8vOXjyRfygttP1AO8oY4vRA.png)](https://asciinema.org/a/Hs8vOXjyRfygttP1AO8oY4vRA)
+
+## asciinema step 10
+[![asciicast](https://asciinema.org/a/aZ6zu76y8cOR9uLCp07SkFD0s.png)](https://asciinema.org/a/aZ6zu76y8cOR9uLCp07SkFD0s)
