@@ -10,11 +10,10 @@ import { cons } from 'hexlet-pairs';
  * Correct!
  */
 const description = 'Balance the given number';
-const generateQuestion = () => {
-  const randNum = getRandomNum(100, 999);
-  let num = randNum;
+const balanceNum = (number) => {
   let count = 0;
   let summ = 0;
+  let num = number;
   while (num !== 0) {
     summ += num % 10;
     count += 1;
@@ -34,8 +33,12 @@ const generateQuestion = () => {
   for (let i = 0; i < zerroCount; i += 1) {
     result = `0${result}`;
   }
+  return result;
+};
+const generateQuestAndCorrectAns = () => {
+  const randNum = getRandomNum(100, 999);
   const question = `${randNum}`;
-  const correctAnswer = String(result);
+  const correctAnswer = String(balanceNum(randNum));
   return cons(question, correctAnswer);
 };
-export default () => buildGame(description, generateQuestion);
+export default () => buildGame(description, generateQuestAndCorrectAns);
