@@ -4,7 +4,7 @@ import { cons } from 'hexlet-pairs';
 /** toString
  * Game Balance
  * @example
- * Balance the given number.
+ * Balance the given number
  * Question: 215
  * Your answer: 233
  * Correct!
