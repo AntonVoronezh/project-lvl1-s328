@@ -10,13 +10,13 @@ import { cons } from 'hexlet-pairs';
  * Correct!
  */
 const description = 'What number is missing in this progression?';
-const length = 10;
+const lenght = 10;
 const generateQuestion = () => {
   const arrayIndex = getRandomNum(0, 9);
   const arrayForProgression = [];
   const startProgression = getRandomNum(1, 20);
   const stepProgression = getRandomNum(1, 10);
-  for (let i = 0; i < length; i += 1) {
+  for (let i = 0; i < lenght; i += 1) {
     arrayForProgression[i] = startProgression + (stepProgression * i);
   }
   const correctAnswer = String(arrayForProgression[arrayIndex]);
