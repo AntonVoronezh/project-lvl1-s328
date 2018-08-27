@@ -1,18 +1,12 @@
-##
-```
-**project Brain Games**
-```
-##
+# project Brain Games
 
-# project-lvl1-s328
 [![Maintainability](https://api.codeclimate.com/v1/badges/9f16e9798cf175b095fe/maintainability)](https://codeclimate.com/github/AntonVoronezh/project-lvl1-s328/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/9f16e9798cf175b095fe/test_coverage)](https://codeclimate.com/github/AntonVoronezh/project-lvl1-s328/test_coverage)
 [![Build Status](https://travis-ci.org/AntonVoronezh/project-lvl1-s328.svg?branch=master)](https://travis-ci.org/AntonVoronezh/project-lvl1-s328)
-#
 
  ## Установка
 ```
-**npm install project-1-antonvoronezh -g**
+npm install project-1-antonvoronezh -g
 
 ```
  ## Список игр
@@ -93,6 +87,7 @@ Question: 5 7 9 11 13 .. 17 19 21 23
 Your answer: 15
 Correct!
 ```
+
 ### brain-prime
 запуск игры:
 ```
@@ -103,6 +98,10 @@ brain-prime
 Question: 7
 Your answer: yes
 Correct!
+```
 
-## asciinema 
+### asciinema 
 [![asciicast](https://asciinema.org/a/aZ6zu76y8cOR9uLCp07SkFD0s.png)](https://asciinema.org/a/aZ6zu76y8cOR9uLCp07SkFD0s)
+
+
+
